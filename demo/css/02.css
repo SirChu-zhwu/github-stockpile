@@ -1,0 +1,6 @@
+div{
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    transition: all 1s 0s linear;
+}

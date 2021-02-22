@@ -1,0 +1,86 @@
+div, p {
+  width: 200px;
+  height: 100px;
+  border: 3px solid pink;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  border-radius: 10px;
+}
+
+h2, p {
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  border-radius: 20px;
+}
+
+a {
+  color: #333;
+}
+a:hover {
+  color: red;
+}
+a:active {
+  color: blue;
+}
+a:visited {
+  color: pink;
+}
+
+p {
+  font-size: 30px;
+  width: 300px;
+}
+
+.item-1 {
+  width: 2em;
+}
+
+.item-2 {
+  width: 4em;
+}
+
+.item-3 {
+  width: 6em;
+}
+
+.item-2 {
+  width: 200px;
+}
+
+.item-3 {
+  width: 300px;
+}
+
+.item-4 {
+  width: 400px;
+}
+
+.item-5 {
+  width: 500px;
+}
+
+div, p {
+  width: 900px;
+}
+
+.a1-icon {
+  background-image: url("/images/a1.png");
+}
+
+.a2-icon {
+  background-image: url("/images/a2.png");
+}
+
+.a3-icon {
+  background-image: url("/images/a3.png");
+}
+
+.a4-icon {
+  background-image: url("/images/a4.png");
+}
+
+/*# sourceMappingURL=01.css.map */
