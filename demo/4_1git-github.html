@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        - 本地：我自己的终端
+        - 远程：在网络那一头的终端
+        - 仓库：一个被 git 管理了的文件夹
+        - 推送：把本地的内容上传到远程里面
+        - 同步：让远程的内容和本地的内容保持一致    -->
+
+<!-- git 使用
+        1.在对要操作的文件夹里面鼠标右击，再点 Git Bash Here
+        2.git初始化, 输入 git init (当前文件夹下的所有文件夹及文件会变成绿色，
+            且文件后面 有 U )，这样当前文件夹就被管理了
+            且会生成 .git 的文件夹（这个文件夹是一个隐藏文件夹）
+            U : 工作区(就是书写源代码的区域)  ;   A : 暂存区    ; 历史区
+        3.(可以使用 git status 查看文件夹的状态)
+            处于 工作区的 文件夹 显示为红色
+        4.把文件添加到 暂存区
+            处于 暂存区的 文件夹 显示为绿色
+            把单独一个文件放在暂存区: git add demo/pages/demo2.html
+            把单独一个文件夹放在暂存区: git add demo/
+            把文件夹下所有的内容都放在暂存区: git add --all 或者 git add .
+        5.把已经放在暂存区的内容在拉回到工作区
+            一个文件: git reset HEAD -- demo/pages/demo2.html
+            一个文件夹: git reset HEAD -- demo/
+            所有的文件: git reset HEAD -- .
+        6.历史区的操作(必须暂存区有内容)
+            把暂存区的内容放到历史区之前需要先登录
+                git config --global user.name "YOUR-NAME"
+                git config --global user.email "YOUR-EMAIL-ADDRESS"
+            把暂存区的内容放到历史区
+                git commit -m "version 1.0.0" (冒号里面填写 版本号)
+            查看当前历史区: git log
+                commit 9a0604fcd4a35643a0371e8762d73ae5f16e08ba (HEAD -> master)
+                (commit：这一个版本的版本编号)
+                Author(作者): YOUR-NAME <YOUR-EMAIL-ADDRESS>
+                Date(本次版本的记录时间):   Mon Feb 22 14:29:19 2021 +0800
+                    version 1.0.0   (版本号名称)
+            进入历史区的文件 不在显示 绿色
+        7.对当前工作区的文件进行修改，在放入暂存再放入历史，会又生成一个新版本
+            然后删除当前文件夹下的所有文件,再使用 git reset --hard 版本编号 进行历史回退
+            会将 版本编号 对应的所有内容【覆盖】到当前文件夹   
+            (且会删除掉 回退版本 之后的所有版本,如回退到 1 版本,会删除1版本后的所有版本) 
+            这个时候我们就可以来回来去的玩我们的历史记录了
+            
+        -->
+
+</body>
+</html>
