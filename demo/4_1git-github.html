@@ -85,6 +85,14 @@
         15.下拉：拉取远程最新代码 : git pull
             (注意要在clone的文件夹 bash 里执行,如克隆了 demo ,在克隆的demo里
             要获取最新代码 也要在克隆的 demo 文件夹 bash 执行)
+        16.git 冲突: (使用 git pull 拉取回来让本地和远程保持一致)
+            但是 git pull 相对不安全，因为会自动和本地内容合并
+
+            可以选择使用 git fetch 
+                使用 fetch 获取远程最新信息并开辟一个临时分支：
+                    git fetch origin master:tmp
+                将当前分支和临时分支的内容进行对比：git diff tmp
+                再选择合并分支内容：git merge tmp
  -->
 
 </body>
