@@ -49,7 +49,19 @@
             会将 版本编号 对应的所有内容【覆盖】到当前文件夹   
             (且会删除掉 回退版本 之后的所有版本,如回退到 1 版本,会删除1版本后的所有版本) 
             这个时候我们就可以来回来去的玩我们的历史记录了
-            
+        8.在github里创建远程仓库,获取相应的仓库地址
+        9.在项目文件夹下打开 git base ，添加仓库地址
+            git remote add origin 仓库地址
+                - remote：远程的意思
+                - add：添加的意思
+                - origin：是一个变量名
+        10.上传内容: git push -u origin master(也可以是其他分支)
+                - origin  推送的地址
+                - master   主要分支
+                master 是上传到远程的 master 分支
+                (上传到相同分支,第二次上传的时候，就不需要再写 -u origin 和 master 了)
+            最后刷新 GitHub
+                
         -->
 
 </body>
